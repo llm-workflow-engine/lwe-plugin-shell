@@ -8,6 +8,9 @@ from lwe.core.plugin import Plugin
 import lwe.core.util as util
 
 class Shell(Plugin):
+    """
+    Transform natural language into a shell command, and optionally execute it
+    """
 
     def default_config(self):
         return {

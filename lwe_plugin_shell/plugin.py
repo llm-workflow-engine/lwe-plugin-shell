@@ -7,6 +7,7 @@ from langchain.schema import HumanMessage, SystemMessage
 from lwe.core.plugin import Plugin
 import lwe.core.util as util
 
+
 class Shell(Plugin):
     """
     Transform natural language into a shell command, and optionally execute it
@@ -44,7 +45,6 @@ Return ONLY the command, no other explanation, words, code highlighting, or text
             HumanMessage(content=prompt),
         ]
         return messages
-
 
     def get_default_shell(self) -> str:
         """

@@ -2,7 +2,7 @@ import os
 import platform
 import subprocess
 
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 
 from lwe.core.plugin import Plugin
 import lwe.core.util as util
